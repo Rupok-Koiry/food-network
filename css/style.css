@@ -1,0 +1,310 @@
+/*=== Google Font ===*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+/*=== Common Css ===*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:  80%;
+  margin: auto;
+}
+h1,h2,h3{
+  font-weight: bold;
+}
+h1{
+  font-size: 60px;
+  color: #575757;
+}
+h2{
+  font-size: 36px;
+  color: #707070;
+}
+h3{
+  font-size: 28px;
+  color: #18191F;
+}
+h1 span, h2 span, p span{
+  color: #FBA24F;
+}
+p,a{
+  font-weight: normal;
+  font-size: 18px;
+}
+p{
+  line-height: 1.8;
+  color: #18191F;
+}
+section img{
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 500px;
+}
+.section-margin{
+  margin-bottom: 80px;
+}
+.w-50{
+  width: 50%;
+}
+.anchor-button,.signup-button,.signup-button-outline{
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+.anchor-button,.signup-button{
+  background-image: linear-gradient(45deg, #FBA24F, #FF1E1E);
+  color: #fff;
+}
+.anchor-button{
+  padding: 15px 30px;
+}
+.signup-button,.signup-button-outline{
+  padding: 10px 20px;
+  margin-top: 10px;
+  display: inline-block;
+}
+.signup-button-outline{
+  color: #828282;
+  border: 2px solid #FBA24F;
+}
+.signup-button-outline:hover{
+  background-image: linear-gradient(45deg, #FBA24F, #FF1E1E);
+  border: 2px solid transparent;
+  color: #fff;
+}
+.anchor-button:hover, .signup-button:hover{
+  background-image: linear-gradient(45deg, #FF1E1E, #FBA24F);
+}
+
+.normal-text{
+  margin: 20px 0 40px 0;
+}
+.underline{
+  margin-bottom: 50px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.underline::after{
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100px;
+  background-color: #FBA24F;
+  margin: 30px auto 0;
+}
+
+/*=== Header Section Styling === */
+header{
+  padding: 20px 0;
+  position: sticky;
+  background-color: #fff;
+  top: 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  z-index: 999;
+}
+
+header img.logo{
+  width: 220px;
+}
+.main-nav{
+  display: flex;
+}
+.main-nav li{
+  list-style: none;
+  margin-right: 20px;
+}
+.main-nav li a{
+  text-decoration: none;
+  display: block;
+  color: #828282;
+}
+
+/* === Hero Section Styling=== */
+#hero{
+  margin-top: 50px;
+}
+#hero p{
+  font-size: 20px;
+  color: #828282;
+}
+
+/* ===About Section Styling=== */
+#about{
+  background-image: url('../images/shapes/7.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 70px;
+}
+#about img{
+  max-width:300px ;
+}
+
+/* ===Recipies Section Styling=== */
+#recipie .row{
+  align-items: stretch;
+}
+#recipie h2{
+  margin-bottom: 10px;
+}
+#recipie p{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.recipie-item {
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  margin: 0 20px;
+  width: 100%;
+}
+.recipie-item img{
+  width: 100%;
+}
+.recipie-item h3{
+  margin: 20px 0;
+}
+
+/* ===Testimonail Section Styling=== */
+#review{
+  padding: 80px 0;
+  
+}
+#review h2{
+  color: #ffffff;
+}
+.section-testmonial{
+  background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.65)), url('../images/food/Project\ Cover4.png');
+  background-size: cover;
+  color: white;
+  background-attachment: fixed;
+}
+.section-testmonial blockquote{
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+  position: relative;
+  margin-top: 40px;
+}
+.section-testmonial blockquote cite{
+  font-size: 90%;
+  margin-top: 25px;
+  display: block;
+  
+}
+.section-testmonial blockquote::before{
+  content: '\201C';
+  font-size:500% ;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -3px;
+}
+.section-testmonial blockquote cite img{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* === Pricing Section Styling === */
+#pricing{
+  padding: 80px 0;
+
+}
+#pricing .row{
+  align-items:stretch;
+}
+.section-plans {
+  background-color: #FEF3EC;
+}
+.plan-box{
+  background-color: white;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  margin: 0 20px;width: 100%;
+}
+.plan-box div {
+  padding: 15px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.plan-box div:last-child {
+  text-align: center;
+  border: 0;
+}
+.plan-box ul li{
+  list-style: none;
+    padding: 5px 0;
+}
+.plan-box ul li i{
+  margin-right: 5px;
+}
+.plan-box ul li .fa-check{
+  color: #42ba96;
+}
+.plan-box ul li .fa-times{
+  color: #F32013;
+}
+.plan-price {
+  font-size: 300%;
+  margin-bottom: 10px;
+  font-weight: 200;
+  color: #FBA24F;
+}
+
+.plan-price span {
+  font-size: 30%;
+  font-weight: 300;
+}
+
+/* ===Media Secion Styling=== */
+#media .row{
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+  padding: 40px 80px;
+  border-radius: 10px;
+}
+#media h3{
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+/* ===Footer Section Styling === */
+footer{
+  text-align: center;
+  background-color: #0B0D17;
+  padding: 30px 0;
+} 
+footer p{
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+footer h3{
+  margin: 15px 0;
+  font-size: 30px;
+}
+footer h3{
+  color: #FBA24F;
+}
+footer h3 span{
+  color: #5B5B5B;
+}
+footer img{
+  width: 30px;
+  margin-right: 10px;
+}
